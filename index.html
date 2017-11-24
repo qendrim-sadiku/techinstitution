@@ -6,75 +6,106 @@
 <link rel="stylesheet" href="css/style.css" type="text/css">
 
 <script src="./js/jquery-3.2.1.min.js"></script>
+<script src="./js/script.js"></script>
 
 <!-- Bootstrap Files -->
+<link rel="stylesheet" href="./css/style.css">
 <link  rel="stylesheet" href="./bootstrap/css/bootstrap.css"></link>
 <script src="./bootstrap/js/bootstrap.js"></script>
 </head>
 
-<body>
+<body class="body">
 
-    <!-- Container -->
-    <div class="container">
-        <!-- Jumbotron -->
-        <div class="jumbotron">
-            <!-- Row -->
-            <div class="row">
-
-                <form>
-                    <div class="col-md-3">
+    <!-- Jumbotron -->
+    <div class="container main-div">
+        <div class="row">
+            <div class="col-md-offset-3">
+                <form action="" class="form-horizontal" id="border-wait-form">
+                    <div class="option-div">
+                        <h3>Forma E Regjistrimit </h3>
+                        <span class="first-span">1</span> 
                         <div class="form-group">
-                            <label for="email"></label>
-                            <input type="email" class="form-control" id="email">
-                        </div>                     
+                            <label for="pika-kufitare">Pika Kufitare</label>           
+                            <input type="hidden" id="datetime-now">
+                            <select class="form-control" id="pika-kufitare">
+                                <option value="verimce">Zgjedh Pikat Kufitare</option>
+                                <option value="qafe-e-prushit">Qafë e Prushit</option>
+                                <option value="qafe-e-morines">Qafë e Morinës</option>
+                                <option value="kull">Kullë</option>
+                                <option value="berrnjak">Bërnjak</option>  
+                                <option value="jarinje">Jarinje</option>  
+                            </select>
+                        </div>
                     </div>
-                    <div class="col-md-3">
+    
+                   <span class="second-span">2</span>
+    
+                   <h4>Hyrje</h4>
+                   <div class="hyrje">
+                       <div class="form-group">
+                           <!-- <p class="min">Minimum</p><input type="text" class="form-control"><p class="max">Max</p> -->
+                           <label class="min" for="hyrje-min">Minimum</label>
+                           <input type="number"  class="form-control" id="hyrje-min"  >
+                           <label class="max" for="hyrje-min">Min</label>
+                       </div>
+                       <div class="form-group">
+                            <!-- <p class="min">Minimum</p><input type="text" class="form-control"><p class="max">Max</p> -->
+                            <label class="min" for="hyrje-max">Max</label>
+                            <input type="number" class="form-control" id="hyrje-max"  >
+                            <label class="max" for="hyrje-max">Min</label>
+                        </div>
+                   </div><!--end of hyrje-div  -->
+                   <h4>Dalje</h4>
+                   <div class="dalje">
                         <div class="form-group">
-                            <label for="email"></label>
-                            <input type="email" class="form-control" id="email">
-                        </div>                     
-                    </div>
-                    <div class="col-md-3">
+                            <label class="min" for="dalje-min">Minimum</label>
+                            <input type="number" class="form-control" id="dalje-min"  >
+                            <label class="max" for="dalje-min">Min</label>
+                        </div>
                         <div class="form-group">
-                            <label for="email"></label>
-                            <input type="email" class="form-control" id="email">
-                        </div>                     
-                    </div>
-                    <div class="col-md-3">
+                             <!-- <p class="min">Minimum</p><input type="text" class="form-control"><p class="max">Max</p> -->
+                            <label class="min" for="dalje-max">Max</label>
+                            <input type="number" class="form-control" id="dalje-max" >
+                            <label class="max" for="dalje-max">Min</label>
+                         </div>
+                    </div><!--end of dalje-div  -->
+            
+                    <span class="third-span">3</span>
+                    <h4>Hyrje</h4>
+                    <div class="hyrje">
                         <div class="form-group">
-                            <label for="email"></label>
-                            <input type="email" class="form-control" id="email">
-                        </div>                     
-                    </div>
-                    <div class="col-md-3">
+                            <label for="hyrje4" class="min">Minimum</label>
+                            <input type="number" class="form-control" id="hyrje4" >
+                            <label for="hyrje4"  class="max">Metra</label>
+                        </div>
                         <div class="form-group">
-                            <label for="email"></label>
-                            <input type="email" class="form-control" id="email">
-                        </div>                     
-                    </div>
-                    <div class="col-md-3">
+                            <label  for="hyrje5" class="min">Max</label>
+                            <input  type="number" class="form-control" id="hyrje5" >
+                            <label for="hyrje5" class="max">Metra</label>
+                        </div>
+                    </div><!--end of hyrje-div  -->
+                    <h4>Dalje</h4>
+                    <div class="dalje">
                         <div class="form-group">
-                            <label for="email"></label>
-                            <input type="email" class="form-control" id="email">
-                        </div>                     
-                    </div>        
-                    <div class="col-md-3">
+                             <!-- <p class="min">Minimum</p><input type="number" class="form-control"><p class="max">Max</p> -->
+                            <label class="min" for="hyrje6">Minimum</label>
+                            <input type="number" class="form-control" id="hyrje6" >
+                            <label class="max" for="hyrje6">Metra</label>
+                        </div>
                         <div class="form-group">
-                            <label for="email"></label>
-                            <input type="email" class="form-control" id="email">
-                        </div>                     
-                    </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <label for="email"></label>
-                            <input type="email" class="form-control" id="email">
-                        </div>                     
-                    </div>        
+                            <!-- <p class="min">Minimum</p><input type="number" class="form-control"><p class="max">Max</p> -->
+                            <label class="min" for="hyrje7">Max</label>
+                            <input type="number" class="form-control" id="hyrje7" >
+                            <label class="max" for="hyrje7">Metra</label>
+                            <div class="buttons">
+                                <button type="submit" class="btn btn-default dbutton">Dergo </button>
+                                <button type="" class="btn btn-default fbutton">Fshi</button>
+                            </div>
+                        </div>    
+                    </div> <!--end of dalje-div  -->
                 </form>
-            </div>
-            <!-- End of row -->
-        </div> 
-        <!-- End of jumbotron -->
-    </div><!-- End of Container -->
+            </div> <!--end of col-md-offset  -->
+        </div> <!-- End of row  -->
+    </div><!-- End of container -->
 </body>
 </html>

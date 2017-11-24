@@ -1,3 +1,132 @@
-form input {
+.body {	
+	background: #89c498;
+	margin: auto !important;
+}
+
+
+.body label {
+	line-height: 2.7;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+.first-span {
+	position: relative;	
+}
+
+.first-span:after {
+	position: absolute;
+	content: '';
+	top: 7px;
+	left: 20px;
+	border:0.5px solid rgb(41, 40, 40);
+	width: 465px;
+} 
+
+.second-span {
+	position: relative;	
+}
+
+.second-span:after {
+	position: absolute;
+	content: '';
+	top: 7px;
+	left: 20px;
+	border:0.5px solid black;
+	width: 465px;
+	height: 1px;
+} 
+
+
+.third-span {
+	position: relative;	
+}
+
+.third-span:after {
+	position: absolute;
+	content: '';
+	top: 7px;
+	left: 20px;
+	border:0.5px solid black;
+	width: 465px;
+	height: 1px;
+} 
+
+.option-div {
+	clear: both;
+}
+
+.option-div h1 {
+	margin-bottom: 60px;
+}
+
+
+.min {
+	float: left;
+	width: 10%;
+	float: left;
+}
+
+
+
+.option-div .form-group label  {
+	width: 10%;
+	float: left;
+}
+
+.form-group {
+	margin-left: 50px;
+}
+
+.form-group select {
+	width: 30%;
+}
+
+.hyrje .form-group .form-control {
+	width: 30% !important;
+	float: left;
+	margin-right: 50px;	
+}
+
+.hyrje .form-group {
 	margin-bottom: 50px;
+}
+
+.dalje .form-group .form-control {
+	width: 30% !important;
+	float: left;
+	margin-right: 50px;	
+}
+
+.dalje .form-group {
+	margin-bottom: 50px;
+}
+
+.buttons {
+	margin-top: 50px;
+}
+
+.buttons .dbutton {
+	background: black;
+	color: white;
+	font-weight: bold;
+	border: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 3px !important;
+}
+
+.buttons .fbutton {
+	background: black;
+	color: white;
+	font-weight: bold;
+	border: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 3px !important;
+} 
+
+.container {
+	margin-bottom: 10px;
 }
